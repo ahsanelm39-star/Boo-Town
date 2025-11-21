@@ -1,0 +1,14 @@
+import Image from "next/image"
+import Bootun from '../../../public/images/btn-arrow.svg'
+
+function Btn({position}) {
+    return (
+        <div className={`relative flex gap-2 items-center py-2 px-4 btn w-fit text-white rounded-2xl ${position == "medel" ? "mx-auto":""} mt-6 cursor-pointer
+            overflow-hidden`}>
+            <span className='relative'>Learn More</span>
+            <Image src={Bootun} alt='icon'className='relative'/>
+        </div>
+    )
+}
+
+export default Btn
