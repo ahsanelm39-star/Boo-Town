@@ -42,10 +42,10 @@ function TopDestination() {
 
     const destinationData = data.map((item,idx)=>{
         return(
-            <div key={idx} className=" w-90 md:w-120 h-60 md:h-80 relative">
+            <div key={idx} className=" w-80 md:w-130 h-64 md:h-80 relative">
                 <Image src={item.img} alt="estination photo" className="w-1/1 h-1/1 md:rounded-lg max-md:rounded-t-lg"/>
                 <span className=" absolute top-3 right-4 p-2 font-bold text-white bg-[#4400e7] rounded-xl">{item.price}</span>
-                <div className="bg-white shadow-md md:rounded-xl max-md:rounded-b-lg p-4 absolute  -bottom-45 md:-bottom-14 md:-left-4 w-1/1 md:w-90">
+                <div className="bg-white shadow-md md:rounded-xl max-md:rounded-b-lg p-4 absolute  -bottom-45 md:-bottom-18 md:-left-4 w-1/1 md:w-85">
                     <h3 className="text-xl font-bold mb-4 text-[#3a3a3a]">{item.title}</h3>
                     <p className=" border-b border-[#ccc] text-sm pb-6">For Free Away. Behind The World Mountan Far From The Countries.</p>
                     <div className="flex mt-4 gap-2">
@@ -60,8 +60,8 @@ function TopDestination() {
 
     return (
         <section className="pt-16 pb-60 md:pb-32">
-            <SpecialHead title={"Top Destination"} description={"Explore Our Top Destination Voted By More Than 100.000+ Customers Around The Warld"} imageContent={"Travel Destination"}/>
-            <div className=" overflow-hidden">
+            <SpecialHead title={"Top Destination"} description={"Explore Our Top Destination Voted By More Than 100.000+ Customers Around The Warld"} imageContent={"TRAVEL DESTINATION"}/>
+            <div className=" overflow-x-hidden pb-20 max-md:pb-47">
                 <div className=" main_box flex gap-8 w-fit">
                     {destinationData}
                     {destinationData}

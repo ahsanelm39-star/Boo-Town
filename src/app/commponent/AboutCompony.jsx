@@ -2,7 +2,7 @@
 import Image from "next/image"
 import AboutPlane from '../../../public/images/about-element-1.webp'
 import AboutImage from '../../../public/images/about-image-1.webp'
-import AboutImage2 from '../../../public/images/offer-bg-2.webp'
+import AboutImage2 from '../../../public/images/about-image-2.webp'
 import AboutCommentImage1 from '../../../public/images/tst-1.webp'
 import AboutCommentImage2 from '../../../public/images/tst-2.webp'
 import AboutCommentImage3 from '../../../public/images/tst-3.webp'
@@ -14,13 +14,13 @@ import Btn from "./Btn"
 
 function AboutCompony() {
     return (
-        <section className="py-14 about_section">
+        <section className="pb-14 about_section max-md:-mt-40 md:-mt-12 pt-14">
             <div className="collect flex justify-between max-lg:flex-col max-lg:items-center">
                 <div>
                     <div className=" md:w-130 mb-8 max-md:px-3 xl:w-160 max-lg:text-center max-md:mb-14">
                         <div className="flex gap-2 mb-6 max-lg:justify-center">
                             <Image src={Plane} alt="plane" className="w-8"/>
-                            <em className="text-md text-[#4400E7]">About Our Compony</em>
+                                <em className="text-md text-[#4400E7] font-bold">ABOUT OUR COMPONY</em>
                             <Image src={Plane} alt="plane" className="w-8"/>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-5 text-[#2a2a2a]">Exoirence World With Our Compony </h2>

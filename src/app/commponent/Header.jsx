@@ -14,11 +14,11 @@ import { VscListSelection } from "react-icons/vsc";
 ///
 
     const menuItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Tour", href: "#tour" },
-    { label: "Blog", href: "#blog" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Tour", href: "/tour" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/contact" },
 ];
 
 ///////
@@ -84,11 +84,11 @@ function showMenuo() {
                     
                     <ul className="flex max-md:hidden linkes relative pr-2">
                         {menuItems.map((item, idx) => (
-                        <Link href={item.href} key={item.label} onClick={() => { setActiveIndex(idx); }}>
-                            <li className={`p-4 font-bold text-white transition-all hover:text-[#4400E7] ${activeIndex === idx ? "on" : ""}`}>
+                        <li key={item.label} onClick={() => { setActiveIndex(idx); }} className="">
+                            <Link href={item.href}  className={`inline-block p-4 font-bold text-white transition-all hover:text-[#4400E7] ${activeIndex === idx ? "on" : ""}`}>
                             {item.label}
-                            </li>
-                        </Link>
+                            </Link>
+                        </li>
                         ))}
                     </ul>
                     <IoSearch   className=" text-2xl text-white md:ml-1 cursor-pointer"/>
