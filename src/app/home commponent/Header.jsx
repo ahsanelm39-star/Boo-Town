@@ -28,7 +28,6 @@ import { VscListSelection } from "react-icons/vsc";
     }
 
     function Menuo() {
-        const [activeIndex, setActiveIndex] = useState(0);
         return (
         <div className={`md:hidden fixed bg-[#0000005d] w-full h-[100vh] top-0 
         right-0 flex justify-end z-55 menuo transition-all duration-300 `}>
@@ -41,8 +40,8 @@ import { VscListSelection } from "react-icons/vsc";
                 </div>
                 <ul className='flex flex-col gap-6 text-white items-center list-ul'>
                     {menuItems.map((item, idx) => (
-                    <Link href={item.href} key={item.label} onClick={() => { setActiveIndex(idx); }}>
-                        <li className={`cursor-pointer transition-all hover:text-[#4400E7] ${activeIndex === idx ? "on" : ""}`}>
+                    <Link href={item.href} key={item.label}>
+                        <li className={`cursor-pointer transition-all`}>
                         {item.label}
                         </li>
                     </Link>
@@ -71,27 +70,53 @@ function showMenuo() {
             }
         })
     },[])
+
+
+    useEffect(()=>{
+        const header = document.querySelector("#header")
+        const links = document.querySelectorAll("#header a")
+        const icon = document.querySelector(".search_icon")
+        console.log(links)
+        window.addEventListener("scroll",()=>{
+            if(window,scrollY > 300 ){
+                header.style.backgroundColor="white" 
+                links.forEach((l)=>{
+                    l.classList.add("title_color")
+                })
+                icon.classList.add("title_color")
+            }else{
+                header.style.backgroundColor="transparent" 
+                links.forEach((l)=>{
+                    l.classList.remove("title_color")
+                })
+                icon.classList.remove("title_color")
+            }
+        })
+
+    },[])
+
+
     return (
         <>
         <Menuo />
-        <header className="border-1 rounded-full border-[#fff] fixed  w-1/1 -top-18 left-0 pt-18 max-md:pb-2  z-50 max-md:-top-17 max-md:rounded-4xl
-        border-r-0 border-l-0 backdrop-blur-2xl shadow-sm">
+        <header id="header" className="border-1 rounded-full border-[#fff] fixed  w-1/1 -top-18 left-0 pt-18 max-md:pb-2  z-50 max-md:-top-17 max-md:rounded-4xl
+        border-r-0 border-l-0 shadow-sm">
             <nav className="collect flex justify-between items-center py-1">
                 <div>
                 <Image src={Logo} alt="logo"/>
                 </div>
                 <div className="flex justify-center items-center gap-3 max-md:gap-4">
+                        <IoSearch   className=" text-2xl text-white md:ml-1 cursor-pointer search_icon"/>
                     
                     <ul className="flex max-md:hidden linkes relative pr-2">
                         {menuItems.map((item, idx) => (
-                        <li key={item.label} onClick={() => { setActiveIndex(idx); }} className="">
-                            <Link href={item.href}  className={`inline-block p-4 font-bold text-white transition-all hover:text-[#4400E7] ${activeIndex === idx ? "on" : ""}`}>
+                        <li key={item.label} >
+                            <Link href={item.href}  className={`inline-block p-4 font-bold text-white transition-all`}>
                             {item.label}
                             </Link>
                         </li>
                         ))}
                     </ul>
-                    <IoSearch   className=" text-2xl text-white md:ml-1 cursor-pointer"/>
                     <div onClick={showMenuo} className="md:hidden text-white text-3xl cursor-pointer">
                         <VscListSelection />
                     </div>

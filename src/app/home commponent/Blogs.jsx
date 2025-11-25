@@ -2,6 +2,7 @@ import Image from "next/image"
 import blog1 from '../../../public/images/blog-1.webp'
 import blog2 from '../../../public/images/blog-2.webp'
 import blog3 from '../../../public/images/blog-3.webp'
+import Link from "next/link"
 
 function Blogs() {
 
@@ -22,7 +23,7 @@ function Blogs() {
     ]
     const dataList = data.map((blog,idx)=>{
         return (
-            <div key={idx} className="w-[350px] relative shadow-xl cursor-pointer blog_box
+            <Link href={"/tour"} key={idx} className="w-[350px] relative shadow-xl cursor-pointer blog_box
                 overflow-hidden rounded-md">
                 <Image src={blog.img} alt="image" className="w-1/1 rounded-md img transition duration-400"/>
                 <div className="bg-white p-4 rounded-md absolute left-[50%] bottom-0 w-[90%]
@@ -30,7 +31,7 @@ function Blogs() {
                     <h3 className="title_color font-bold">{blog.title}</h3>
                     <span className="p text-sm">Emma Mark. April 25.2025</span>
                 </div>
-            </div>
+            </Link>
         )
     })
 

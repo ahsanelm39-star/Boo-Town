@@ -1,40 +1,44 @@
 //images
 import Image from "next/image"
 import Feature1 from '../../../public/images/Feature-image-1.webp'
-import Feature2 from '../../../public/images/Feature-image-2.webp'
+// import Feature2 from '../../../public/images/Feature-image-2.webp'
+import Icon1 from '../../../public/images/location-icon.png'
+import Icon2 from '../../../public/images/phone-icon.png'
+import Icon3 from '../../../public/images/plane-icon.jpg'
+
+///commponent
 import Plane from '../../../public/images/plane.svg'
 
 function Feature() {
 
-
     const data = [
         {
-            icon:"icons",
+            icon:Icon1,
             title:"Choose Destination",
         },
         {
-            icon:"icons",
+            icon:Icon2,
             title:"Make Payment",
         },
         {
-            icon:"icons",
+            icon:Icon3,
             title:"Reach Airport On Data",
         },
     ]
 
     const dataList = data.map((box,idx)=>{
         return (
-            <div key={idx} className=" border-2 border-[#dbdbdbb9] p-4 w-65 rounded-md bg-white max-sm:w-1/1">
-                <span className="mb-4 inline-block">{box.icon}</span>
-                <h4 className="mb-4 font-bold text-xl">{box.title}</h4>
+            <div key={idx} className=" border-2 border-[#dbdbdbb9] p-4 w-65 rounded-md bg-white max-sm:w-1/1 shadow-lg">
+                <Image src={box.icon} alt="image" width={2000} height={2000} className="w-20 mb-4"/>
+                <h4 className="mb-4 font-bold text-xl title_color">{box.title}</h4>
                 <p className="text-sm text-[#232323cb]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto libero accusantium iusto fugit! Fugiat illo.</p>
             </div>
         )
     })
 
     return (
-        <section className="py-14 feature_section relative">
-            <Image src={Feature2} alt="image" className=" absolute -top-20 w-60"/>
+        <section className="pb-30 mt-20 feature_section relative">
+            {/* <Image src={Feature2} alt="image" className=" absolute -top-20 w-60"/> */}
             <div className="collect flex">
                 <div>
                     <div className=" md:w-130 mb-8 max-md:px-3 xl:w-160 max-lg:text-center max-lg:mx-auto max-lg:mb-14

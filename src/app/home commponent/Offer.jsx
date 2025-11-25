@@ -3,6 +3,7 @@ import OfferBg1 from '../../../public/images/offer-bg-1.webp'
 import OfferBg2 from '../../../public/images/offer-bg-2.webp'
 import SpecialHead from "./SpecialHead"
 import Btn from "./Btn"
+import Link from "next/link"
 
 function Offer() {
     return (
@@ -16,10 +17,10 @@ function Offer() {
             <div className=" relative">
                 <SpecialHead title={'Get Spechial Offer'} description={'Embark On An Unforgettable Journy With Our Exclusive Tour Spechial Offer Seize The Moment And Create Lasting Memories'} imageContent={'40% OFFER'}/>
                 <div className="mx-auto w-fit -mt-12">
-                    <Btn/>
+                    <Link href={"/contact"}><Btn text={"Learn More"} /></Link>
                 </div>
             </div>
-            <div className="relative w-fit mx-auto -mt-6 flex items-center gap-4">
+            <div className="relative w-fit mx-auto flex items-center gap-4 -mt-4 h-fit z-[-1]">
                 <span className="text-[200px] font-bold text-[#4400E7]">40</span>
                 <div className="flex flex-col">
                     <span className="text-black font-bold text-6xl">%</span>

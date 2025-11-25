@@ -11,6 +11,7 @@ import Plane from '../../../public/images/plane.svg'
 //icons
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import Btn from "./Btn"
+import Link from "next/link"
 
 function AboutCompony() {
     return (
@@ -36,7 +37,7 @@ function AboutCompony() {
                         </ul>
                     </div>
                     <div className="mt-8 gap-4 flex items-center max-md:justify-center max-sm:flex-col">
-                        <Btn position={'start'}/>
+                        <Link href={"/about"}><Btn position={'start'} text={"Learn More"}/></Link>
                         <div className="flex items-center gap-3">
                             <div className="flex mt-4">
                                 <Image src={AboutCommentImage1} alt="coment imageC" className="w-12 rounded-full "/>

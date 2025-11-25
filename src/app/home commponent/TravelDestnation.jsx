@@ -7,6 +7,7 @@ import Descover3 from '../../../public/images/Discover-image-3.webp'
 import Descover4 from '../../../public/images/Discover-image-4.webp'
 //icons
 import { FaLocationDot } from "react-icons/fa6";
+import Link from 'next/link'
 
 function TravelDestnation() {
 
@@ -31,7 +32,7 @@ function TravelDestnation() {
 
     const boxsList = boxs.map((des,idx)=>{
         return(
-            <div key={idx} className=' rounded-full w-[300px] h-[400px] overflow-hidden box_image relative cursor-pointer'>
+            <Link href={"/tour"} key={idx} className=' rounded-full w-[300px] h-[400px] overflow-hidden box_image relative cursor-pointer'>
                 <Image src={des.img} alt={'image'} className='w-1/1 h-1/1 rounded-full transition duration-500 rotate-4 absolute top-0 
                 left-0' />
                 <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-20%] bg-[#00000089]
@@ -42,7 +43,7 @@ function TravelDestnation() {
                     </div>
                     <p className=' text-white mt-4 text-center text-xl'>Beautiful tropical beach sea with umbrella chair around swimming pool</p>
                 </div>
-            </div>
+            </Link>
         )
     })
 

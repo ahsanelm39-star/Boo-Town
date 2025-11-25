@@ -7,21 +7,18 @@ import Face from '../../../public/images/face.png'
 import Insta from '../../../public/images/insta.png'
 import Wats from '../../../public/images/wats.png'
 import Link from "next/link"
+import Btn from "./Btn"
 
 function Footer() {
     return (
-        <footer className=" mt-14">
+        <div className=" mt-14">
                 <div className="flex">
                 <div>
                 <div className="flex bg-[#4400E7] py-8 px-12 gap-12">
                     <h2 className="text-4xl font-bold text-white ">Subscribe For Latest Update About Travelling</h2>
                     <form className="mr-6">
-                        <input type="text" className="bg-white p p-4 rounded-full w-100" placeholder="Enter Your Email"/>
-                        <button className={`relative flex gap-2 items-center py-2 px-8 bt bg-gradient-to-r from-[#1e1cac] to-[#8e00e7]  w-fit text-white rounded-full mt-6 cursor-pointer
-                            overflow-hidden`}>
-                            <span className='relative'>Send</span>
-                            <Image src={Bootun} alt='icon'className='relative'/>
-                        </button>
+                        <input type="email" className="bg-white p p-4 rounded-full w-100" placeholder="Enter Your Email" required/>
+                        <button><Btn text={"Send"}/></button>
                     </form>
                 </div>
                 <div>
@@ -30,10 +27,10 @@ function Footer() {
                             <Image src={Logo} alt="logo"/>
                             <p className="p mt-4">Lorem ipsum dolo sint quam expedita, illum veniam quo ea unde eos totam voluptatum asperiores quos velit pariatur ipsam ipsa rerum!</p>
                             <div className="flex mt-2 items-center">
-                                <Link href={"#"} className="w-9 mr-2"><Image src={Google} alt="google"/></Link>
-                                <Link href={"#"} className="w-8 rounded-md mr-4"><Image src={Face} alt="google" className="rounded-md"/></Link>
-                                <Link href={"#"} className="w-8"><Image src={Insta} alt="google"/></Link>
-                                <Link href={"#"} className="w-16"><Image src={Wats} alt="google"/></Link>
+                                <Link href={"https://www.google.com/"} target="blank" className="w-9 mr-2"><Image src={Google} alt="google"/></Link>
+                                <Link href={"https://www.facebook.com/"} target="blank" className="w-8 rounded-md mr-4"><Image src={Face} alt="google" className="rounded-md"/></Link>
+                                <Link href={"https://www.instagram.com/"} target="blank" className="w-8"><Image src={Insta} alt="google"/></Link>
+                                <Link href={"https://www.whatsapp.com/?lang=en"} target="blank" className="w-16"><Image src={Wats} alt="google"/></Link>
                             </div>
                             </div>
                             <div className="flex justify-between flex-1">
@@ -65,7 +62,7 @@ function Footer() {
                 <p className="p-2 bg-[#171717e1] font-bold text-[#eee] text-center">
                     &copy;	2025 Ahmed Hassan - <span className="text-[#bababa]">All Rights Rerserved</span>
                 </p>
-        </footer>
+        </div>
     )
 }
 

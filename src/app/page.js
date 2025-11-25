@@ -1,12 +1,13 @@
-import AboutCompony from "./commponent/AboutCompony";
-import Blogs from "./commponent/Blogs";
-import Feature from "./commponent/Feature";
-import Hero from "./commponent/Hero";
-import Offer from "./commponent/Offer";
-import Testimonials from "./commponent/Testimonials";
-import TopDestination from "./commponent/TopDestination";
-import Tour from "./commponent/Tour";
-import TravelDestnation from "./commponent/TravelDestnation";
+import AboutCompony from "./home commponent/AboutCompony";
+import Blogs from "./home commponent/Blogs";
+import Feature from "./home commponent/Feature";
+import Hero from "./home commponent/Hero";
+import Offer from "./home commponent/Offer";
+import Testimonials from "./home commponent/Testimonials";
+import TopDestination from "./home commponent/TopDestination";
+import Tour from "./home commponent/Tour";
+import TravelDestnation from "./home commponent/TravelDestnation";
+import Footer from "./home commponent/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials/>
       <Tour/>
       <Blogs/>
+      <Footer/>
     </>
   );
 }
