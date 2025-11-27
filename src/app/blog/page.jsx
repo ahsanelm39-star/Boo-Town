@@ -3,16 +3,12 @@ import Banner from '../../../public/images/section-banner.webp'
 ///commponent
 import Blog from "../blog commponent/Blog"
 import MainFooter from "../home commponent/MainFooter"
+import MainSection from "../home commponent/MainSection"
 
 function page() {
     return (
         <>
-            <section className=" relative">
-                <Image src={Banner} alt="image" className="h-130"/>
-                <div className=" absolute top-[50%] left-[10%]">
-                    <h2 className="text-6xl font-bold text-white">Blog</h2>
-                </div>
-            </section>
+            <MainSection text={"Blog"}/>
             <Blog/>
             <MainFooter/>
         </>

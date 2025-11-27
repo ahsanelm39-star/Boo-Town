@@ -28,17 +28,16 @@ function Feature() {
 
     const dataList = data.map((box,idx)=>{
         return (
-            <div key={idx} className=" border-2 border-[#dbdbdbb9] p-4 w-65 rounded-md bg-white max-sm:w-1/1 shadow-lg">
-                <Image src={box.icon} alt="image" width={2000} height={2000} className="w-20 mb-4"/>
+            <div key={idx} className=" border-2 border-[#dbdbdbb9] p-4 w-65 rounded-md bg-white max-sm:w-1/1 shadow-lg transition-all hover:shadow-2xl">
+                <Image src={box.icon} alt="icon" width={2000} height={2000} className="w-20 mb-4"/>
                 <h4 className="mb-4 font-bold text-xl title_color">{box.title}</h4>
-                <p className="text-sm text-[#232323cb]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto libero accusantium iusto fugit! Fugiat illo.</p>
+                <p className="text-sm text-[#232323cb]">Loportis luctus neque duis locinia volutp suspedisse pulvinar pen atibus malesu ada placerat...</p>
             </div>
         )
     })
 
     return (
         <section className="pb-30 mt-20 feature_section relative">
-            {/* <Image src={Feature2} alt="image" className=" absolute -top-20 w-60"/> */}
             <div className="collect flex">
                 <div>
                     <div className=" md:w-130 mb-8 max-md:px-3 xl:w-160 max-lg:text-center max-lg:mx-auto max-lg:mb-14
@@ -54,7 +53,7 @@ function Feature() {
                         {dataList}
                     </div>
                 </div>
-                <div className="absolute right-0 w-120 z-10 -bottom-10 lg:top-0">
+                <div className="absolute right-0 w-120 z-10 bottom-0 lg:top-0 ">
                     <Image src={Feature1} alt="feature image " className=""/>
                 </div>
             </div>

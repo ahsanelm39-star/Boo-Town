@@ -9,9 +9,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 //images
 import Image from 'next/image';
-import HeroImage3 from '../../../public/images/Destination-image-3.webp'
-import HeroImage from '../../../public/images/Hero-slider-2.webp'
-import HeroImage2 from '../../../public/images/Destination-6.webp'
+import HeroImage from '../../../public/images/Destination-6.webp'
+import HeroImage2 from '../../../public/images/Hero-slider-1.webp'
+import HeroImage3 from '../../../public/images/Hero-slider-2.webp'
 import Btn from './Btn';
 import Link from 'next/link';
 

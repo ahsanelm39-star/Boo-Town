@@ -39,15 +39,16 @@ function Price() {
 
     const dataList = data.map((box,idx)=>{
         return (
-            <div key={idx} className="p-8 bg-white rounded-md shadow-md border border-[#eee]">
+            <div key={idx} className="max-xl:w-[380px]  p-8 bg-white rounded-md shadow-md border border-[#eee]
+            transition duration-300 hover:translate-y-[-10px] hover:shadow-xl">
                 <div className="flex">
                     <span className="font-bold text-xl mr-1">$</span>
                     <span className="text-5xl font-bold bg-gradient-to-r from-[#1e1cac] to-[#8e00e7] text-transparent bg-clip-text">{box.price}</span>
                     <span className="mt-6 ml-2 text-xl">/ Month</span>
                 </div>
                 <div className="flex gap-3 items-center justify-center mt-6">
-                    <Image src={box.img1} alt="image" className="w-60 h-25 rounded-full"/>
-                    <Image src={box.img2} alt="image" className="rounded-full h-25 w-30"/>
+                    <Image src={box.img1} alt="price image" className="w-60 h-25 rounded-full"/>
+                    <Image src={box.img2} alt="price image" className="rounded-full h-25 w-30"/>
                 </div>
                 <h3 className="title_color text-4xl font-bold mt-6">
                     {box.title}
@@ -81,11 +82,11 @@ function Price() {
 
     return (
         <section className="py-14">
-            <div className="collect">
-                <KnowUs/>
-                <h2 className="title_color text-4xl font-bold">Best Holiady Backage</h2>
+            <div className="collect max-xl:text-center">
+                <div className="w-fit max-xl:mx-auto"><KnowUs/></div>
+                <h2 className="title_color text-3xl md:text-4xl font-bold">Best Holiady Backage</h2>
             </div>
-            <div className="collect flex justify-center items-center gap-6 pt-12">
+            <div className="collect flex justify-center items-center gap-6 pt-12 max-xl:flex-wrap">
                 {dataList}
             </div>
         </section>

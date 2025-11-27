@@ -21,66 +21,66 @@ function MainFooter() {
                 <div>
                     <h2 className="title_color text-4xl font-bold">Quick Links :</h2>
                 </div>
-                <div className="mt-8 flex justify-between"> 
+                <div className="mt-8 flex justify-between max-xl:flex-wrap gap-8"> 
                     <ul className="flex flex-col">
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 hover:text-[#4400e7] transition duration-300">Branding</Link>
+                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 a transition duration-300">Branding</Link>
                         </li>
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 hover:text-[#4400e7] transition duration-300">Recent Work</Link>
+                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 a transition duration-300">Recent Work</Link>
                         </li>
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pt-1 hover:text-[#4400e7] transition duration-300">Our History</Link>
+                            <Link href={""} className="font-bold title_color text-lg pt-1 a transition duration-300">Our History</Link>
                         </li>
                     </ul>
                     <ul className="flex flex-col">
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 hover:text-[#4400e7] transition duration-300">Product Gallary</Link>
+                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 a transition duration-300">Product Gallary</Link>
                         </li>
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 hover:text-[#4400e7] transition duration-300">Web & Interactive</Link>
+                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 a transition duration-300">Web & Interactive</Link>
                         </li>
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pt-1 hover:text-[#4400e7] transition duration-300">Help & Support</Link>
+                            <Link href={""} className="font-bold title_color text-lg pt-1 a transition duration-300">Help & Support</Link>
                         </li>
                     </ul>
                     <ul className="flex flex-col">
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 hover:text-[#4400e7] transition duration-300">About Us</Link>
+                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 a transition duration-300">About Us</Link>
                         </li>
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 hover:text-[#4400e7] transition duration-300">Branded Merchandise</Link>
+                            <Link href={""} className="font-bold title_color text-lg pb-2 pt-1 a transition duration-300">Branded Merchandise</Link>
                         </li>
                         <li className="flex gap-2 items-center">
                             <FaCheck className=" font-bold text-white bg-[#4400e7] rounded-full p-1 text-xl"/>
-                            <Link href={""} className="font-bold title_color text-lg pt-1 hover:text-[#4400e7] transition duration-300">Our Awards</Link>
+                            <Link href={""} className="font-bold title_color text-lg pt-1 a transition duration-300">Our Awards</Link>
                         </li>
                     </ul>
                     <div>
                         <div className="flex items-center gap-3 mb-4">
                             <FaPhone className="font-bold text-[#16b36fd0] text-2xl"/>
-                            <span className="font-bold text-xl">999 555 7777</span>
+                            <span className="font-bold text-xl max-md:text-[18px]">999 555 7777</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <MdAttachEmail className="font-bold text-[#a6b316d0] text-2xl"/>
-                            <span className="font-bold text-xl">examble@gmail.com</span>
+                            <span className="font-bold text-xl max-md:text-[15px]">examble@gmail.com</span>
                         </div>
                         <div className="flex gap-4 items-center mt-2">
-                            <Image src={Face} alt="social media" className="w-8 h-8 mr-3 rounded-sm"/>
-                            <Image src={Insta} alt="social media"className="w-8 h-8"/>
-                            <Image src={Wats} alt="social media" className="w-16 pt-2"/>
+                            <Link href={"https://www.facebook.com/"} target="blanck"><Image src={Face} alt="social media" className="w-8 h-8 mr-3 rounded-sm"/></Link>
+                            <Link href={"https://www.instagram.com/"} target="blanck"><Image src={Insta} alt="social media"className="w-8 h-8"/></Link>
+                            <Link href={"https://www.whatsapp.com/?lang=en"} target="blanck"><Image src={Wats} alt="social media" className="w-16 pt-2"/></Link>
                         </div>
                     </div>
                 </div>
-                <div className="flex gap-6 justify-between items-center mt-12">
+                <div className="flex gap-6 justify-between items-center mt-12 overflow-auto">
                     <Image src={Image1} alt="" className="rounded-xl w-70"/>
                     <Image src={Image2} alt="" className="rounded-xl w-70"/>
                     <Image src={Image3} alt="" className="rounded-xl w-70"/>

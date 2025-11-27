@@ -12,14 +12,14 @@ import TourBox from "./TourBox"
 function TourFilter() {
     return (
         <section className="py-13">
-            <div className="collect flex justify-between">
-                <div className="w-110"> 
+            <div className="collect flex justify-between gap-10 max-xl:flex-col">
+                <div> 
                     <div className="pb-5 border-b-2 border-[#dbdbdbc8] flex justify-between">
                         <h3 className="font-bold text-2xl pt-2">Criteria</h3>
                         <span className="bg-gradient-to-r from-[#1e1cac] to-[#8e00e7] py-2 px-6 rounded-full text-white cursor-pointer">Clear All</span>
                     </div>
-                    <div>
-                        <ul className="p-4 rounded-md bg-[#eee] mt-8">
+                    <div className="max-xl:flex sm:gap-8 box_filter max-sm:flex-wrap max-sm:justify-center">
+                        <ul className="w-100 2xl:w-116 max-sm:w-1/1 p-4 rounded-md bg-[#eee] mt-8">
                             <h3 className="font-medium text-2xl mb-4">Destination</h3>
                             <li className="flex justify-between border-b  pb-3 border-[#7474748e] transition duration-300 hover:bg-[#ddd] ">
                                 <div className="flex items-center gap-2">
@@ -50,7 +50,7 @@ function TourFilter() {
                                 <span className="title_color bg-[#ddd] inline-block px-2 py-1 rounded-xl text-sm">8</span>
                             </li>
                         </ul>
-                        <ul className="p-4 rounded-md bg-[#eee] mt-8">
+                        <ul className="w-100 2xl:w-116 max-sm:w-1/1 p-4 rounded-md bg-[#eee] mt-8">
                             <h3 className="font-medium text-2xl mb-4">Activities</h3>
                             <li className="flex justify-between border-b  transition duration-300 hover:bg-[#ddd] pb-3 border-[#7474748e]">
                                 <div className="flex items-center gap-2">
@@ -81,7 +81,7 @@ function TourFilter() {
                                 <span className="title_color bg-[#ddd] inline-block px-2 py-1 rounded-xl text-sm">4</span>
                             </li>
                         </ul>
-                        <ul className="p-4 rounded-md bg-[#eee] mt-8">
+                        <ul className="w-100 2xl:w-116 max-sm:w-1/1 p-4 rounded-md bg-[#eee] mt-8 max-lg:hidden">
                             <h3 className="font-medium text-2xl mb-4">Trip Types</h3>
                             <li className="flex justify-between border-b  transition duration-300 hover:bg-[#ddd]  pb-3 border-[#7474748e]">
                                 <div className="flex items-center gap-2">
@@ -108,15 +108,17 @@ function TourFilter() {
                     </div>
                 </div>
                 <div>
-                    <div  className="flex justify-center items-center gap-6 mb-6">
+                    <div  className="flex justify-center items-center gap-8 mb-8 max-sm:flex-wrap">
                         <TourBox image={Image1} title={"Canada, Gananoque Island"}/>
                         <TourBox image={Image2} title={"France, Eiffel Tower"}/>
                     </div>
-                    <div  className="flex justify-center items-center gap-6 mb-6">
+                    <div  className="flex justify-center items-center gap-8 mb-8 max-sm:flex-wrap">
                         <TourBox image={Image3} title={"South Africa Places"}/>
                         <TourBox image={Image4} title={"United Arab Emirates Desert"}/>
                     </div>
-                        <TourBox image={Image5} title={"Pradadise, Places"}/>
+                        <div className="flex justify-center">
+                            <TourBox image={Image5} title={"Pradadise, Places"}/>
+                        </div>
                 </div>
             </div>
         </section>

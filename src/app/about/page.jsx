@@ -6,19 +6,15 @@ import Brand from "../about commponent/Brand"
 import Price from "../about commponent/Price"
 import MainFooter from "../home commponent/MainFooter"
 import TravelDestnation from "../home commponent/TravelDestnation"
+import MainSection from "../home commponent/MainSection"
 
 function page() {
     return (
         <>
-            <section className=" relative">
-                <Image src={Banner} alt="image" className="h-130"/>
-                <div className=" absolute top-[50%] left-[10%]">
-                    <h2 className="text-6xl font-bold text-white">About</h2>
-                </div>
-            </section>
+            <MainSection text={"About"}/>
             <TravelExperience/>
-            <Brand/>
             <TravelDestnation/>
+            <Brand/>
             <Price/>
             <MainFooter/>
         </>

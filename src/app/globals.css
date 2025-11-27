@@ -72,7 +72,7 @@ h2,h3,h4,h5,h6{
     z-index: 2;
 }
 
-.bt::before{
+.btn::before{
     content: "";
     position: absolute;
     top: 0;
@@ -91,14 +91,9 @@ h2,h3,h4,h5,h6{
     -ms-transition: .3s;
     -o-transition: .3s;
 }
-.bt:hover::before{
+.btn:hover::before{
     left: 0;
 }
-
-.on{
-    color:#4400E7;
-}
-
 .menuo{
     transform: translatex(100%);
     -webkit-transform: translatex(100%);
@@ -180,27 +175,7 @@ h2,h3,h4,h5,h6{
     font-family: serif;
 }
 
-.blog_box:hover .img{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-.blog_box:hover>div{
-    background-color: #4400E7;
-    transform: translatey(-20px);
-    -webkit-transform: translatey(-20px);
-    -moz-transform: translatey(-20px);
-    -ms-transform: translatey(-20px);
-    -o-transform: translatey(-20px);   
-}
-.blog_box:hover>div h3,.blog_box:hover>div span{
-    color: white;
-}
-.blog_box:hover>div h3{
-    border-bottom: solid 1px white;
-}
+
 .experience{
     background-image: url(../../public/images/Experience-bg.webp);
     background-size: cover;
@@ -232,4 +207,45 @@ input{
 
 .title_color{
     color: #2a2a2ae9 !important;
+}
+.search-back{
+    display: block !important;
+}
+.a:hover{
+    color: #4400E7 !important;
+}
+.box_filter label{
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.box_filter label:hover{
+    color: #000 !important;
+}
+.black1{
+    color: black !important;
+}
+
+.blog_box:hover .img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.blog_box:hover>div{
+    background-color: #4400E7;
+    transform: translatey(-20px);
+    -webkit-transform: translatey(-20px);
+    -moz-transform: translatey(-20px);
+    -ms-transform: translatey(-20px);
+    -o-transform: translatey(-20px);   
+}
+.blog_box:hover>div h3,.blog_box:hover>div span{
+    color: white;
+}
+.blog_box:hover>div h3{
+    border-bottom: solid 1px white;
 }

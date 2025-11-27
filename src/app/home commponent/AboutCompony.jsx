@@ -25,7 +25,7 @@ function AboutCompony() {
                             <Image src={Plane} alt="plane" className="w-8"/>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-5 text-[#2a2a2a]">Exoirence World With Our Compony </h2>
-                        <p className="font-medium text-[#575757] text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rerum! Veritatis voluptates fugiat atque modi praesentium culpa, porro tempora deleniti molestiae.</p>
+                        <p className="font-medium text-[#575757] text-md">Embark on a transformative journey with our company, where every experience is a gateway to the extraordinary.</p>
                     </div>
                     <div className="flex gap-6 items-center max-lg:justify-center max-sm:flex-col ">
                         <Image src={AboutImage2} alt="about image" className="w-63  xl:w-90 rounded-r-4xl max-sm:w-1/1"/>
@@ -40,10 +40,10 @@ function AboutCompony() {
                         <Link href={"/about"}><Btn position={'start'} text={"Learn More"}/></Link>
                         <div className="flex items-center gap-3">
                             <div className="flex mt-4">
-                                <Image src={AboutCommentImage1} alt="coment imageC" className="w-12 rounded-full "/>
-                                <Image src={AboutCommentImage2} alt="coment imageC" className="w-12 rounded-full -ml-3 "/>
-                                <Image src={AboutCommentImage3} alt="coment imageC" className="w-12 rounded-full -ml-3"/>
-                                <Image src={AboutCommentImage4} alt="coment imageC" className="w-12 rounded-full -ml-3"/>
+                                <Image src={AboutCommentImage1} alt="comment image" className="w-12 rounded-full "/>
+                                <Image src={AboutCommentImage2} alt="comment image" className="w-12 rounded-full -ml-3 "/>
+                                <Image src={AboutCommentImage3} alt="comment image" className="w-12 rounded-full -ml-3"/>
+                                <Image src={AboutCommentImage4} alt="comment image" className="w-12 rounded-full -ml-3"/>
                             </div>
                             <span className="text-[#464646] text-md font-bold mt-4 max-sm:text-sm">52+ satisfied clients</span>
                         </div>

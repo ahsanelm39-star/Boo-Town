@@ -8,6 +8,7 @@ import Destination5 from '../../../public/images/Destination-image-5.webp'
 //icons
 import { FaLocationArrow } from "react-icons/fa6";
 import SpecialHead from "./SpecialHead"
+import Link from "next/link"
 
 function TopDestination() {
 
@@ -42,8 +43,8 @@ function TopDestination() {
 
     const destinationData = data.map((item,idx)=>{
         return(
-            <div key={idx} className=" w-80 md:w-130 h-64 md:h-80 relative">
-                <Image src={item.img} alt="estination photo" className="w-1/1 h-1/1 md:rounded-lg max-md:rounded-t-lg"/>
+            <Link href={"/tour"} key={idx} className=" w-80 md:w-130 h-64 md:h-80 relative">
+                <Image src={item.img} alt="destination photo" className="w-1/1 h-1/1 md:rounded-lg max-md:rounded-t-lg"/>
                 <span className=" absolute top-3 right-4 p-2 font-bold text-white bg-[#4400e7] rounded-xl">{item.price}</span>
                 <div className="bg-white shadow-md md:rounded-xl max-md:rounded-b-lg p-4 absolute  -bottom-45 md:-bottom-18 md:-left-4 w-1/1 md:w-85">
                     <h3 className="text-xl font-bold mb-4 text-[#3a3a3a]">{item.title}</h3>
@@ -53,7 +54,7 @@ function TopDestination() {
                         <span className="font-bold text-sm text-[#2a2a2a]">7 Days</span>
                     </div>
                 </div>
-            </div>
+            </Link>
         )
     })
 

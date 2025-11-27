@@ -23,9 +23,9 @@ function Blogs() {
     ]
     const dataList = data.map((blog,idx)=>{
         return (
-            <Link href={"/tour"} key={idx} className="w-[350px] relative shadow-xl cursor-pointer blog_box
+            <Link href={"/blog"} key={idx} className="max-xl:w-[280px]  xl:w-[350px] max-sm:w-1/1 relative shadow-xl cursor-pointer blog_box
                 overflow-hidden rounded-md">
-                <Image src={blog.img} alt="image" className="w-1/1 rounded-md img transition duration-400"/>
+                <Image src={blog.img} alt="blog image" className="w-1/1 rounded-md img transition duration-400"/>
                 <div className="bg-white p-4 rounded-md absolute left-[50%] bottom-0 w-[90%]
                 translate-x-[-50%] transition duration-400">
                     <h3 className="title_color font-bold">{blog.title}</h3>
@@ -39,17 +39,17 @@ function Blogs() {
     return (
         <section className='py-14'>
             <div className="collect">
-                <div className='flex justify-around items-center mb-14'>
-                    <div className='w-[300px]'>
+                <div className='flex justify-between items-center mb-14 gap-4 max-lg:flex-col max-lg:text-center'>
+                    <div className='lg:w-[300px]'>
                         <span className='text-blue-400 font-bold serf text-xl inline-block 
                         mb-2'>BLOG & NEWS</span>
                         <h2 className='text-4xl font-bold title_color'>Get More Update News & Blog</h2>
                     </div>
-                    <div className='w-[600px]'>
+                    <div className='md:w-[600px] md:px-4'>
                         <p className='p'>Stay informed ispired by subscribing to our newsletter for the latest news and insightful blog posts - your gateway to a world of update</p>
                     </div>
                 </div>
-                <div className="flex justify-center items-center gap-8">
+                <div className="flex justify-evenly items-center gap-8 flex-wrap">
                     {dataList}
                 </div>
             </div>
