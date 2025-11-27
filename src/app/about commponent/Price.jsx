@@ -47,7 +47,7 @@ function Price() {
                     <span className="mt-6 ml-2 text-xl">/ Month</span>
                 </div>
                 <div className="flex gap-3 items-center justify-center mt-6">
-                    <Image src={box.img1} alt="price image" className="w-60 h-25 rounded-full"/>
+                    <Image src={box.img1} alt="price image" className="w-65 max-sm:w-40 h-25 rounded-full"/>
                     <Image src={box.img2} alt="price image" className="rounded-full h-25 w-30"/>
                 </div>
                 <h3 className="title_color text-4xl font-bold mt-6">

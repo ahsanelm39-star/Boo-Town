@@ -11,7 +11,7 @@ function SpecialHead({title,description,imageContent}) {
                     <Image src={Plane} alt="plane" className="w-8"/>
                 </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-3 title_color">{title}</h2>
-                    <p className={`font-medium text-[#575757] text-lg ${title == "Get Spechial Offer" ? "text-sm":""} max-sm:text-sm`}>{description}</p>
+                    <p className={`font-medium text-[#575757] text-lg ${title == "Get Spechial Offer" ? "text-sm text-[#191919]":""} max-sm:text-sm`}>{description}</p>
             </div>
     )
 }

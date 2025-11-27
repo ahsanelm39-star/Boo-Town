@@ -45,10 +45,9 @@ import { VscListSelection } from "react-icons/vsc";
                     ))}
                 </ul>
                 <div className="flex gap-4 justify-center items-center">
-                    <Link href={"https://www.google.com/"} target="blank" className="w-9 mr-2"><Image src={Google} alt="google"/></Link>
-                                        <Link href={"https://www.facebook.com/"} target="blank" className="w-8 rounded-md mr-4"><Image src={Face} alt="google" className="rounded-md"/></Link>
-                                        <Link href={"https://www.instagram.com/"} target="blank" className="w-8"><Image src={Insta} alt="google"/></Link>
-                                        <Link href={"https://www.whatsapp.com/?lang=en"} target="blank" className="w-16"><Image src={Wats} alt="google"/></Link>
+                    <Link href={"https://www.facebook.com/"} target="blank" className="w-10 rounded-md mr-4"><Image src={Face} alt="google" className="rounded-md"/></Link>
+                    <Link href={"https://www.instagram.com/"} target="blank" className="w-10"><Image src={Insta} alt="google"/></Link>
+                    <Link href={"https://www.whatsapp.com/?lang=en"} target="blank" className="w-18"><Image src={Wats} alt="google"/></Link>
                 </div>
             </div>
         </div>
