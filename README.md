@@ -38,52 +38,59 @@ A travel services website built with Next.js and Tailwind CSS, featuring tour li
 
 ---
 
+
 ## 🧰 Installation
 
 Clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/ahsanelm39-star/Boo-Town.git
+git clone https://github.com/ahsanelm39-star/BoomTown.git
 npm install
 npm run dev
 ```
- Open your browser at:
-```text
+
+Open your browser at:
+
+```
 http://localhost:3000
 ```
 
 ---
 
+## 🏗️ Build
 
-## Build
 Create a production build:
+
 ```bash
 npm run build
 ```
- Then start the production server:
+
+Start the production server:
+
 ```bash
 npm start
 ```
-Next.js will output the optimized production version inside:
 
+The optimized build will be generated inside:
+
+```
 .next/
+```
+
+---
 
 ## 🌐 Deploy on Vercel
 
-Push your project to GitHub.
+1. Push your project to GitHub  
+2. Open **Vercel Dashboard** → *Add New Project*  
+3. Select your repository  
+4. Vercel will detect Next.js automatically  
+5. Use these default settings:
 
-Go to Vercel Dashboard → Add New Project.
+| Setting           | Value         |
+|------------------|----------------|
+| Build Command     | npm run build |
+| Install Command   | npm install   |
+| Output Directory  | .next         |
 
-Select the GitHub repository.
-
-Vercel will auto-detect Next.js.
-
-Default settings:
-
-|  Setting | Value |
-|-----------|--------|
-| npm run build | Build Command |
-| npm install | Install Command |
-| .next | Output Directory |
-
-Click Deploy — done!
+🎉 Click **Deploy** — and your site goes live!
