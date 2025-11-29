@@ -1,7 +1,7 @@
-# 🚀 BoomTwon
+# 🚀 BoomTown
 ![Cover](https://i.postimg.cc/QtTLTGMP/tsmym-bdwn-ʿnwan-(13).png)
 
-travel services website built with Next.js and Tailwind CSS, featuring tour listings, online booking, itinerary management, and customer reviews — fast, modern, and SEO-friendly.
+A travel services website built with Next.js and Tailwind CSS, featuring tour listings, online booking, itinerary management, and customer reviews — fast, modern, and SEO-friendly.
 
 
 ---
@@ -9,7 +9,7 @@ travel services website built with Next.js and Tailwind CSS, featuring tour list
 
 ## 🌐 Demo
 🔗 **Live Preview:** [View Demo](https://boo-town.vercel.app/)  
-📦 **Repository:** [GitHub Repo](https://i.postimg.cc/PqMvn9H6/g4sv-Ba-Ww-Cxo.png)
+📦 **Repository:** [GitHub Repo](https://github.com/ahsanelm39-star/Boo-Town)
 
 ---
 
@@ -27,14 +27,14 @@ travel services website built with Next.js and Tailwind CSS, featuring tour list
 | **Framework** | Next.js  |
 | **Language** | JavaScript |
 | **Styling** | Tailwind CSS |
-| **Icons** | React icon |
+| **Icons** | React Icons |
 | **Deployment** | Vercel |
 ---
 
 ## 📸 Screenshots
 | Desktop View | Mobile View |
 |---------------|--------------|
-| ![Desktop](https://i.postimg.cc/XYGxCRD9/zub-Ia5Pr-R.png) | ![Mobile](https://i.postimg.cc/cCCnmmVj/cca796be141.png) |
+| ![Desktop](https://i.postimg.cc/PqMvn9H6/g4sv-Ba-Ww-Cxo.png) | ![Mobile](https://i.postimg.cc/cCCnmmVj/cca796be141.png) |
 
 ---
 
@@ -43,7 +43,7 @@ travel services website built with Next.js and Tailwind CSS, featuring tour list
 Clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/ahsanelm39-star/URBANBUILD.git
+git clone https://github.com/ahsanelm39-star/Boo-Town.git
 npm install
 npm run dev
 ```
