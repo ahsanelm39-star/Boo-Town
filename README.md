@@ -1,5 +1,5 @@
 # 🚀 BoomTown
-![Cover](https://i.postimg.cc/QtTLTGMP/tsmym-bdwn-ʿnwan-(13).png)
+![Cover](https://i.postimg.cc/65CVHSgD/Boom-Twon.png)
 
 A travel services website built with Next.js and Tailwind CSS, featuring tour listings, online booking, itinerary management, and customer reviews — fast, modern, and SEO-friendly.
 
