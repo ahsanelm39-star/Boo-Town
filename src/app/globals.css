@@ -94,24 +94,6 @@ h2,h3,h4,h5,h6{
 .btn:hover::before{
     left: 0;
 }
-.menuo{
-    transform: translatex(100%);
-    -webkit-transform: translatex(100%);
-    -moz-transform: translatex(100%);
-    -ms-transform: translatex(100%);
-    -o-transform: translatex(100%);
-}
-.menuo-back{
-    transform: translatex(0)!important;
-    -webkit-transform: translatex(0)!important;
-    -moz-transform: translatex(0)!important;
-    -ms-transform: translatex(0)!important;
-    -o-transform: translatex(0)!important;
-}
-.menuo a:hover{
-    color: #4400E7 !important;
-}
-
 .main_box{
     animation: movement 55s infinite linear;
     -webkit-animation: movement 55s infinite linear;
@@ -248,4 +230,7 @@ input{
 }
 .blog_box:hover>div h3{
     border-bottom: solid 1px white;
+}
+.text_black{
+    color: #333 !important;
 }

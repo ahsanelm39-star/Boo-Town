@@ -28,33 +28,6 @@ function Brand() {
                     <Image src={Brand4} alt={'brand'}/>
                 </div>
             </div>
-            {/* <div className="py-14">
-                <div className="collect flex justify-between gap-6 items-center">
-                    <div className="w-130">
-                        <KnowUs/>
-                        <h2 className="text-5xl font-bold title_color">What People Say About Us</h2>
-                        <p className="p mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci sit voluptatibus dignissimos alias qui nostrum autem voluptatem delectus, corporis.</p>
-                        <Btn text={"Find Out More"}/>
-                    </div>
-                    <Swiper
-                        effect={'cards'}
-                        grabCursor={true}
-                        modules={[EffectCards]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide className="h-50 w-30">Slide 1</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 2</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 3</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 4</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 5</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 6</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 7</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 8</SwiperSlide>
-                        <SwiperSlide className="h-50 w-30">Slide 9</SwiperSlide>
-                    </Swiper>
-                </div>
-
-            </div> */}
         </>
     )
 }
