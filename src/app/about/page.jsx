@@ -1,12 +1,10 @@
-import Image from "next/image"
-import Banner from '../../../public/images/section-banner.webp'
 ////commponent
-import TravelExperience from "../about commponent/TravelExperience"
-import Brand from "../about commponent/Brand"
-import Price from "../about commponent/Price"
-import MainFooter from "../home commponent/MainFooter"
-import TravelDestnation from "../home commponent/TravelDestnation"
-import MainSection from "../home commponent/MainSection"
+import TravelExperience from "../components/about commponent/TravelExperience"
+import Brand from "../components/about commponent/Brand"
+import Price from "../components/about commponent/Price"
+import MainFooter from "../components/MainFooter"
+import TravelDestnation from "../components/home commponent/TravelDestnation"
+import MainSection from "../components/MainSection"
 
 function page() {
     return (

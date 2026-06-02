@@ -1,16 +1,11 @@
 import KnowUs from "./KnowUs"
-import Btn from "../home commponent/Btn"
-//images
+import Btn from "../Btn"
+
 import Image from "next/image"
-import Box1Image1 from '../../../public/images/price-1.webp'
-import Box1Image2 from '../../../public/images/price-2.webp'
-import Box2Image1 from '../../../public/images/price-3.webp'
-import Box2Image2 from '../../../public/images/price-4.webp'
-import Box3Image1 from '../../../public/images/price-5.webp'
-import Box3Image2 from '../../../public/images/ins4.webp'
+import Link from "next/link"
+
 ///icons
 import { FaRegCircleCheck } from "react-icons/fa6";
-import Link from "next/link"
 
 
 function Price() {
@@ -20,20 +15,20 @@ function Price() {
         {
             price:49,
             title:"Turkey Tour",
-            img1:Box1Image1,
-            img2:Box1Image2
+            img1:'/images/price-1.webp',
+            img2:'/images/price-2.webp'
         },
         {
             price:69,
             title:"Full Travel",
-            img1:Box2Image1,
-            img2:Box2Image2
+            img1:'/images/price-3.webp',
+            img2:'/images/price-4.webp'
         },
         {
             price:99,
             title:"World Tour",
-            img1:Box3Image1,
-            img2:Box3Image2
+            img1:'/images/price-5.webp',
+            img2:'/images/ins4.webp'
         }
     ]
 
@@ -47,8 +42,8 @@ function Price() {
                     <span className="mt-6 ml-2 text-xl">/ Month</span>
                 </div>
                 <div className="flex gap-3 items-center justify-center mt-6">
-                    <Image src={box.img1} alt="price image" className="w-65 max-sm:w-40 h-25 rounded-full"/>
-                    <Image src={box.img2} alt="price image" className="rounded-full h-25 w-30"/>
+                    <Image src={box.img1} width={200} height={200} alt="price image" className="w-65 max-sm:w-40 h-25 rounded-full"/>
+                    <Image src={box.img2} width={200} height={200} alt="price image" className="rounded-full h-25 w-30"/>
                 </div>
                 <h3 className="title_color text-4xl font-bold mt-6">
                     {box.title}
@@ -82,7 +77,7 @@ function Price() {
 
     return (
         <section className="py-14">
-            <div className="collect max-xl:text-center">
+            <div className="container md:px-8 max-xl:text-center">
                 <div className="w-fit max-xl:mx-auto"><KnowUs/></div>
                 <h2 className="title_color text-3xl md:text-4xl font-bold">Best Holiady Backage</h2>
             </div>

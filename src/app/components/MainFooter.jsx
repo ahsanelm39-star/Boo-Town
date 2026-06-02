@@ -17,7 +17,7 @@ import { MdAttachEmail } from "react-icons/md";
 function MainFooter() {
     return (
         <footer className="pt-12" id="footer">
-            <div className="collect">
+            <div className="container">
                 <div>
                     <h2 className="title_color text-4xl font-bold">Quick Links :</h2>
                 </div>

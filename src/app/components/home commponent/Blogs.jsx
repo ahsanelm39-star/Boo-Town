@@ -1,11 +1,10 @@
 import Image from "next/image"
-import blog1 from '../../../public/images/blog-1.webp'
-import blog2 from '../../../public/images/blog-2.webp'
-import blog3 from '../../../public/images/blog-3.webp'
+import blog1 from '../../../../public/images/blog-1.webp'
+import blog2 from '../../../../public/images/blog-2.webp'
+import blog3 from '../../../../public/images/blog-3.webp'
 import Link from "next/link"
 
-function Blogs() {
-
+const Blogs = ()=> {
 
     const data = [
         {
@@ -28,7 +27,7 @@ function Blogs() {
                 <Image src={blog.img} alt="blog image" className="w-1/1 rounded-md img transition duration-400"/>
                 <div className="bg-white p-4 rounded-md absolute left-[50%] bottom-0 w-[90%]
                 translate-x-[-50%] transition duration-400">
-                    <h3 className="title_color font-bold">{blog.title}</h3>
+                    <h3 className="font-bold">{blog.title}</h3>
                     <span className="p text-sm">Emma Mark. April 25.2025</span>
                 </div>
             </Link>
@@ -38,7 +37,7 @@ function Blogs() {
 
     return (
         <section className='py-14'>
-            <div className="collect">
+            <div className="container">
                 <div className='flex justify-between items-center mb-14 gap-4 max-lg:flex-col max-lg:text-center'>
                     <div className='lg:w-[300px]'>
                         <span className='text-blue-400 font-bold serf text-xl inline-block 
@@ -49,7 +48,7 @@ function Blogs() {
                         <p className='p'>Stay informed ispired by subscribing to our newsletter for the latest news and insightful blog posts - your gateway to a world of update</p>
                     </div>
                 </div>
-                <div className="flex justify-evenly items-center gap-8 flex-wrap">
+                <div className="flex justify-between items-center gap-6 flex-wrap">
                     {dataList}
                 </div>
             </div>

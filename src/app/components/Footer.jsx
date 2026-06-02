@@ -1,11 +1,4 @@
 import Image from "next/image"
-import footerImage from '../../../public/images/footer.webp'
-import Bootun from '../../../public/images/btn-arrow.svg'
-import Logo from '../../../public/images/brand-image5.webp'
-import Google from '../../../public/images/google.png'
-import Face from '../../../public/images/face.png'
-import Insta from '../../../public/images/insta.png'
-import Wats from '../../../public/images/wats.png'
 import Link from "next/link"
 import Btn from "./Btn"
 
@@ -24,39 +17,39 @@ function Footer() {
                         <div>
                             <div className="py-8 px-3 md:px-12 flex items-center md:justify-between gap-4 md:gap-10 max-md:flex-col">
                                 <div className="md:max-w-110 max-md:mr-auto max-md:pr-">
-                                    <Image src={Logo} alt="logo"/>
+                                    <Image src={'/images/brand-image5.webp'} width={150} height={100} alt="logo"/>
                                     <p className="p mt-4">Lorem ipsum dolo sint quam expedita, illum veniam quo ea unde eos totam voluptatum asperiores quos velit pariatur ipsam ipsa rerum!</p>
                                     <div className="flex mt-2 items-center">
-                                        <Link href={"https://www.google.com/"} target="blank" className="w-9 mr-2"><Image src={Google} alt="google"/></Link>
-                                        <Link href={"https://www.facebook.com/"} target="blank" className="w-8 rounded-md mr-4"><Image src={Face} alt="google" className="rounded-md"/></Link>
-                                        <Link href={"https://www.instagram.com/"} target="blank" className="w-8"><Image src={Insta} alt="google"/></Link>
-                                        <Link href={"https://www.whatsapp.com/?lang=en"} target="blank" className="w-16"><Image src={Wats} alt="google"/></Link>
+                                        <Link href={"https://www.google.com/"} target="blank" className="w-9 mr-2"><Image src={'/images/google.png'} width={100} height={100} alt="google"/></Link>
+                                        <Link href={"https://www.facebook.com/"} target="blank" className="w-8 rounded-md mr-4"><Image src={'/images/face.png'} width={100} height={100} alt="facebook" className="rounded-md"/></Link>
+                                        <Link href={"https://www.instagram.com/"} target="blank" className="w-8"><Image src={'/images/insta.png'} width={100} height={100} alt="insgram"/></Link>
+                                        <Link href={"https://www.whatsapp.com/?lang=en"} target="blank" className="w-16"><Image src={'/images/wats.png'} width={100} height={100} alt="watsUp"/></Link>
                                     </div>
                                 </div>
                                 <div className="flex md:justify-between flex-1 max-md:w-1/1 gap-5">
                                     <ul className="p">
-                                        <li className="li"><Link href={"#"}>About</Link></li>
-                                        <li className="li"><Link href={"#"} >Services</Link></li>
-                                        <li className="li"><Link href={"#"}>Login</Link></li>
-                                        <li className="li"><Link href={"#"}>Fights</Link></li>
+                                        <li className="li"><Link href={""}>About</Link></li>
+                                        <li className="li"><Link href={""} >Services</Link></li>
+                                        <li className="li"><Link href={""}>Login</Link></li>
+                                        <li className="li"><Link href={""}>Fights</Link></li>
                                     </ul>
                                     <ul className="p">
-                                        <li className="li"><Link href={"#"}>Boking</Link></li>
-                                        <li className="li"><Link href={"#"}>FQA</Link></li>
-                                        <li className="li"><Link href={"#"}>Hotels</Link></li>
-                                        <li className="li"><Link href={"#"}>Teams</Link></li>
+                                        <li className="li"><Link href={""}>Boking</Link></li>
+                                        <li className="li"><Link href={""}>FQA</Link></li>
+                                        <li className="li"><Link href={""}>Hotels</Link></li>
+                                        <li className="li"><Link href={""}>Teams</Link></li>
                                     </ul>
                                     <ul className="p">
-                                        <li className="li"><Link href={"#"}>Terms & Use</Link></li>
-                                        <li className="li"><Link href={"#"}>Sitemap</Link></li>
-                                        <li className="li"><Link href={"#"}>Contact Us</Link></li>
+                                        <li className="li"><Link href={""}>Terms & Use</Link></li>
+                                        <li className="li"><Link href={""}>Sitemap</Link></li>
+                                        <li className="li"><Link href={""}>Contact Us</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="w-fit max-xl:hidden">
-                        <Image src={footerImage} alt="footer image" className="w-150 h-1/1"/>
+                        <Image src={'/images/footer.webp'} width={300} height={300} alt="footer image" className="w-150 h-1/1"/>
                     </div>
                 </div>
                 <p className="p-2 bg-[#171717e1] font-bold text-[#eee] text-center">

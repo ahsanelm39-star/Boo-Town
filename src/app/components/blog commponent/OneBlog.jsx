@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Person from '../../../public/images/blog-author.jpeg'
 //icons
 import { FaArrowTrendUp } from "react-icons/fa6";
 
@@ -7,10 +6,10 @@ function OneBlog({img, title}) {
     return (
         <div className="shadow-lg 2xl:w-180 rounded-b-md transition duration-400 hover:translate-y-[-14px] hover:shadow-2xl cursor-pointer ">
             <div>
-                <Image src={img} alt="blog image" className="max-sm:h-60"/>
+                <Image src={img} width={1000} height={1000} alt="blog image" className="max-sm:h-60"/>
             </div>
             <div className="p-4 mt-6">
-                <Image src={Person} alt="blog image" className="rounded-full w-12"/>
+                <Image src={'/images/blog-author.jpeg'} width={200} height={200} alt="blog image" className="rounded-full w-12"/>
                 <h3 className="text-2xl title_color font-bold my-4">{title}</h3>
                 <p className="p"> adipisicing elit. In inventore repellendus illum obcaecati, laborum impedit sit voluptate nisi corporis nihil adipisci laboriosam deserunt aliquid quam. Facere, incidunt accusantium! Tempore, pariatur.</p>
                 <div className="flex gap-4 items-center mt-4">
@@ -18,7 +17,6 @@ function OneBlog({img, title}) {
                     <FaArrowTrendUp className="text-white bg-[#4400e7] p-2 rounded-full text-4xl cursor-pointer"/>
                 </div>
             </div>
-
         </div>
     )
 }

@@ -1,10 +1,7 @@
 ///component
-import MainFooter from "../home commponent/MainFooter"
-import TourFilter from "../tour commponent/TourFilter"
-////iamges
-import Image from "next/image"
-import Banner from '../../../public/images/section-banner.webp'
-import MainSection from "../home commponent/MainSection"
+import MainFooter from "../components/MainFooter"
+import TourFilter from "../components/tour commponent/TourFilter"
+import MainSection from "../components/MainSection"
 
 function page() {
     return (

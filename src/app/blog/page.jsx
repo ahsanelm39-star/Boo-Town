@@ -1,9 +1,7 @@
-import Image from "next/image"
-import Banner from '../../../public/images/section-banner.webp'
 ///commponent
-import Blog from "../blog commponent/Blog"
-import MainFooter from "../home commponent/MainFooter"
-import MainSection from "../home commponent/MainSection"
+import Blog from "../components/blog commponent/Blog"
+import MainFooter from "../components/MainFooter"
+import MainSection from "../components/MainSection"
 
 function page() {
     return (

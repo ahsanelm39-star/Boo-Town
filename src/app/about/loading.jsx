@@ -1,11 +1,9 @@
 import Image from "next/image"
-import LodingImage from '../../../public/images/LoadingPen-ezgif.com-crop.width-800.gif'
+import Loding from "../components/Loding"
 
 function loading() {
     return (
-        <div className="bg-white w-1/1 h-1/1 flex justify-center items-center">
-            <Image src={LodingImage} alt="loding image"/>
-        </div>
+        <Loding/>
     )
 }
 

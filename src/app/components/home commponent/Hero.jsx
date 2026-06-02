@@ -7,17 +7,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-//images
+
 import Image from 'next/image';
-import HeroImage from '../../../public/images/Destination-6.webp'
-import HeroImage2 from '../../../public/images/Hero-slider-1.webp'
-import HeroImage3 from '../../../public/images/Hero-slider-2.webp'
-import Btn from './Btn';
+import Btn from '../Btn';
 import Link from 'next/link';
 
-function Hero() {
+const Hero = () => {
     return (
-        <section className="hero_section h-screen relative" id='hero'>
+        <section className="h-screen relative" id='hero'>
         <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -28,19 +25,18 @@ function Hero() {
             pagination={{
             clickable: true,
             }}
-            // navigation={true}
             modules={[Autoplay, Navigation]}
             className="mySwiper"
             loop={true}
         >
             <SwiperSlide>
-                <Image src={HeroImage2} alt={"hero image"} width={90000} height={90000} />
+                <Image src={'/images/Hero-slider-1.webp'} alt={"hero image"} width={90000} height={90000} />
             </SwiperSlide>
             <SwiperSlide>
-                <Image src={HeroImage} alt={"hero image"} width={90000} height={90000} />
+                <Image src={'/images/Destination-6.webp'} alt={"hero image"} width={90000} height={90000} />
             </SwiperSlide>
             <SwiperSlide>
-                <Image src={HeroImage3} alt={"hero image"} width={90000} height={90000}/>
+                <Image src={'/images/Hero-slider-2.webp'} alt={"hero image"} width={90000} height={90000}/>
             </SwiperSlide>
         </Swiper>
             <div className=' absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-2 w-1/1 text-center px-2'>

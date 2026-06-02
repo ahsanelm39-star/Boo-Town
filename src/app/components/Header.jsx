@@ -6,7 +6,6 @@ import Logo from '../../../public/images/brand-image5.webp'
 import Face from '../../../public/images/face.png'
 import Insta from '../../../public/images/insta.png'
 import Wats from '../../../public/images/wats.png'
-import Google from '../../../public/images/google.png'
 //icons
 import { IoSearch } from "react-icons/io5";
 import { useEffect, useState } from "react";
@@ -47,7 +46,7 @@ useEffect(()=>{
                     rounded-r-xl cursor-pointer"><IoSearch/></button>
                 </div>
             </div>
-            <nav className="collect flex justify-between items-center py-1">
+            <nav className="container md:px-10 flex justify-between items-center py-1">
                 <div>
                 <Link href={"/"}><Image src={Logo} alt="logo"/></Link>
                 </div>
